@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>activaid</id>
+    <version>1.3.2.44</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl> -->
+    <owners>pdavid</owners>
+    <title>activaid (Install)</title>
+    <authors>Wolfgang Reszel</authors>
+    <projectUrl>https://activaid.telgkamp.de</projectUrl>
+    <copyright>2013</copyright>
+    <tags>activaid install ahk helper software</tags>
+    <summary>toolset for windows with useful scripts</summary>
+    <description>ac'tivAid heißt ein von Wolfgang Reszel im Auftrag der c't-Redaktion programmiertes Paket aus Skripten, die Windows komfortabler machen und um nützliche Funktionen, etwa Textbausteine und Online-Übersetzer, ergänzen. </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
