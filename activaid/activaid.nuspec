@@ -4,7 +4,7 @@
     <id>activaid</id>
     <version>1.3.2.44</version>
     <packageSourceUrl>https://github.com/psdavid-muc/choco/tree/master/activaid</packageSourceUrl>
-    <owners>markt_psdavid</owners>
+    <owners>pdavid</owners>
     <title>activaid (Install)</title>
     <authors>Wolfgang Reszel</authors>
     <projectUrl>https://activaid.telgkamp.de</projectUrl>

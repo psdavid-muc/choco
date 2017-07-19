@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'activaid*'  #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
+  softwareName  = 'ac''tivaid'  #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
   fileType      = 'EXE'
-  silentArgs    = "/S _?=%programfiles(x86)%\activAid"
+  silentArgs    = "/S"
   validExitCodes= @(0)
 }
 
