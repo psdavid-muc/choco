@@ -4,7 +4,6 @@ Import-Module $PSScriptRoot\utils\module_libreoffice-helper.psm1
 
 $packageArgs = @{
   packageName            = 'libreoffice'
-  version                = '6.0.7'
   fileType               = 'msi'
   url                    = 'https://download.documentfoundation.org/libreoffice/stable/6.0.7/win/x86/LibreOffice_6.0.7_Win_x86.msi'
   url64bit               = 'https://download.documentfoundation.org/libreoffice/stable/6.0.7/win/x86_64/LibreOffice_6.0.7_Win_x64.msi'
@@ -21,7 +20,7 @@ if ((Get-URLStatus $packageArgs.url) -eq $true){
     Install-ChocolateyPackage @packageArgs
 
 } else {
-    $archiveURL = Get-ArchiveURL -softwareVersion $packageArgs.version -softwareHash32 $packageArgs.checksum -softwareHash64 $packageArgs.checksum64
+    $archiveURL = Get-ArchiveURL -softwareVersion "6.0.7" -softwareHash32 $packageArgs.checksum -softwareHash64 $packageArgs.checksum64
     
     $packageArgs.url = $archiveURL[0]
     $packageArgs.url64bit = $archiveURL[1]
